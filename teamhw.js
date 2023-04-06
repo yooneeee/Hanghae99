@@ -17,6 +17,7 @@ let ball = 0; // ball 횟수
 while (true) {
   //숫자 입력
   let input = prompt("컴퓨터가 숫자를 생성하였습니다. 답을 맞춰보세요");
+  console.log("컴퓨터가 숫자를 생성하였습니다. 답을 맞춰보세요");
   let inputArray = input.split(""); //3자리수 각각 한자리씩 배열로 변환
 
   //strike, ball 횟수 초기화
@@ -41,7 +42,7 @@ while (true) {
 
   if (strike === 3) {
     // 3자리 모두 숫자 값, 위치 일치 => 게임 종료
-    console.log(`${count - 1}만에 맞히셨습니다. 
+    console.log(`${count - 1}번만에 맞히셨습니다. 
                   게임을 종료합니다.`); // count는 for문 돌기전에 증가하므로 -1해줘야함.
     break; //조건문 탈출
   } else {
