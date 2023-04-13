@@ -4,6 +4,7 @@ function solution(num) {
   const coins = [500, 100, 50, 10]; //갖고 있는 동전종류(잔돈)
 
   for (let i = 0; i < coins.length; i++) {
+    //잔돈만큼 반복
     let mok = Math.floor(change / coins[i]); //잔돈 종류가 더 큰 수부터 change를 나누었을 때 몫을 구함
     change = change - mok * coins[i]; // 거스름돈에서 해당 동전의 금액 x 몫을 뺌
     answer += mok;

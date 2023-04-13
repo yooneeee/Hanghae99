@@ -6,7 +6,7 @@ function solution(str) {
       //O일 경우 count를 1씩 증가
       count++;
     } else {
-      //X일 경우 count를 초기화
+      //X일 경우 count를 0으로 초기화
       count = 0;
     }
     sum += count;
